@@ -7,3 +7,17 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.buttons{
+    background: white;
+    color: black;
+    border: none;
+    padding: 10px 24px;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+.buttons:hover {
+    background-color: lightgray;
+    color: black;
+  }
