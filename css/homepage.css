@@ -21,6 +21,11 @@ body {
     border-radius: 12px;
 }
 
+.buttons a{
+    text-decoration: none;
+    color: black;
+}
+
 /*Properties if button is hover*/
 .buttons:hover {
     background-color: lightgray;
