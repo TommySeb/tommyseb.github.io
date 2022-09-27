@@ -1,0 +1,53 @@
+/*Properties of HTML*/
+html{
+    height: 100%;
+}
+
+/*Properties of the body*/
+body {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Century Gothic";
+}
+
+/*Properties of buttons*/
+button{
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    background-size: 100% 100%;
+    border: none;
+    padding: 10px 24px;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+#github{
+    background-image: url('/img/github.webp');
+}
+
+#instagram{
+    background-image: url('/img/instagram.webp');
+}
+
+#email{
+    background-image: url('/img/email.webp');
+}
+
+/*Properties if button is hover*/
+button:hover {
+    opacity: 40%;
+    /*background-color: lightgray;*/
+}
+
+table{
+    /*Dimension of the table*/
+    width: 60%;
+    height: 50%;
+    /*Center the table*/
+    margin-left: auto;
+    margin-right: auto;
+}
