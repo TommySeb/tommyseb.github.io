@@ -1,28 +1,27 @@
-/*Properties of HTML*/
 html{
     height: 100%;
 }
 
-/*Properties of the body*/
 body {
-    min-height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     color: white;
     font-family: "Century Gothic";
 }
 
 /*Properties of buttons*/
+a{
+    text-decoration: none;
+}
+
 button{
-    background-color: transparent;
     width: 50px;
     height: 50px;
     background-size: 100% 100%;
+    background-color: transparent;
     border: none;
-    padding: 10px 24px;
-    font-size: 16px;
-    border-radius: 12px;
+    margin: 2px;
+    color: transparent;
 }
 
 #github{
@@ -40,26 +39,11 @@ button{
 /*Properties if button is hover*/
 button:hover {
     opacity: 40%;
-    /*background-color: lightgray;*/
 }
 
-table{
-    /*Dimension of the table*/
-    width: 60%;
-    height: 50%;
-    /*Center the table*/
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/*
+/* Mobile CSS */
 @media screen and (max-width: 768px){
-    table{
-        float: none;
-        display: block;
-        width: 85%;
-        padding: 15px;
-        border: none;
+    body{
+        grid-template-columns: 1fr;
     }
 }
-*/
