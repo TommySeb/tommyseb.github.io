@@ -55,7 +55,7 @@ button:hover {
 }
 
 /* Mobile CSS */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) and (min-width: 0px){
     body{
         grid-template-columns: 1fr;
     }
