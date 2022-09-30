@@ -9,7 +9,7 @@ body {
     margin-inline: 10vw;
     height: 99vh;
     color: white;
-    font-family: "Century Gothic";
+    font-family: "Century Gothic", sans-serif;
     align-items: center;
 }
 
