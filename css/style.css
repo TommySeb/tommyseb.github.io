@@ -6,7 +6,7 @@ html{
 body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-inline: 10vw;
+    margin: 3vw 10vw;
     color: white;
     font-family: "Century Gothic", sans-serif;
     align-items: center;
