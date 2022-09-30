@@ -1,6 +1,7 @@
 html{
-    width: 100%;
-    height: 100%;
+    min-height: 100%;
+    display: grid;
+    align-content: center;
 }
 
 body {
@@ -12,20 +13,6 @@ body {
     align-items: center;
 }
 
-/* Properties of text */
-#testo{
-    text-align: justify;
-}
-
-#immagine{
-    margin: 50px;
-}
-
-/*Properties of buttons*/
-a{
-    text-decoration: none;
-}
-
 button{
     width: 40px;
     height: 40px;
@@ -33,7 +20,18 @@ button{
     background-color: transparent;
     border: none;
     margin: 2px;
-    color: transparent;
+}
+
+button:hover {
+    opacity: 40%;
+}
+
+a{
+    text-decoration: none;
+}
+
+#immagine{
+    margin: 50px;
 }
 
 #github{
@@ -44,16 +42,14 @@ button{
     background-image: url('/img/instagram.webp');
 }
 
+#youtube{
+    background-image: url('/img/youtube.webp');
+}
+
 #email{
     background-image: url('/img/email.webp');
 }
 
-/*Properties if button is hover*/
-button:hover {
-    opacity: 40%;
-}
-
-/* Mobile CSS */
 @media screen and (max-width: 768px) and (min-width: 0px){
     body{
         grid-template-columns: 1fr;
