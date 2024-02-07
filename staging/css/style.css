@@ -1,0 +1,62 @@
+:root {
+    --hamburgerW: 40px;
+    --hamburgerH: 8px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("/img/background.svg");
+    background-repeat: no-repeat;
+    background-position: center; /* Change this line */
+    background-size: cover; /* Change this line */
+}
+
+.navbar-line, .navbar-line::before, .navbar-line::after {
+    width: var(--hamburgerW);
+    height: var(--hamburgerH);
+    background-color: black;
+}
+
+.navbar-line::before, .navbar-line::after {
+    content: "";
+    position: relative;
+    display: block;
+}
+
+.navbar-line::before {
+    bottom: calc(var(--hamburgerH) * 1.5);
+}
+
+.navbar-line::after {
+    top: calc(var(--hamburgerH) / 2);
+}
+
+button{
+    all:unset;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 55px;
+    height: 55px;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p{
+    margin: 0px;
+}
+
+.col-sm-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* if you also want to center the text horizontally */
+}
