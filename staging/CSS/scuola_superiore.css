@@ -1,0 +1,15 @@
+/* Generale */
+body{
+    background-color: #1D212B;
+    font-family: 'Century Gothic', 'Arial', 'Sans Serif';
+}
+
+#indietro{
+    all: unset;
+
+    width: 50px;
+    height: 50px;
+
+    background-image: url("/IMG/indietro.png");
+    background-size: cover;
+}

@@ -1,0 +1,175 @@
+/* Regole generali della pagina */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Century Gothic", sans-serif;
+}
+
+body{
+    background: #1D212B;
+}
+
+/* Regole per le singole sezioni*/
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-child(odd){
+    color: #FFF;
+}
+
+section:nth-child(even){
+    color: #1D212B;
+    background: #FFF;
+}
+
+section .container{
+    margin: 100px;
+}
+
+section h1{
+    font-size: 60px;
+}
+
+section h2{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section .cards{
+    display: flex;
+}
+
+section .cards .text-card{
+    background: #2696E9;
+    margin: 20px;
+    padding: 20px;
+}
+
+section .cards .text-card h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Regole per il reveal delle sezioni */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* Regole per immagine e testo affiancati */
+.col-lg-4 {
+    display: flex;
+    align-items: center; /* This will center the image vertically */
+    justify-content: center; /* This will center the image horizontally */
+}
+
+.col-lg-4 img{
+    width: 100%;
+}
+
+.col-lg-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* if you also want to center the text horizontally */
+}
+
+.col-lg-8 p{
+    text-align: justify;
+    margin: 0px;
+}
+
+.col-lg-8 h1{
+    margin: 0px;
+}
+
+/* Regole per elenchi puntati */
+.container ul{
+    margin-left: 20px;
+}
+
+/* Regole per link */
+a {
+    position: relative;
+    text-decoration: none;
+    color: #1D212B; /* Change this to the color you want */
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1D212B; /* Change this to the color you want */
+    transition: width .3s;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+/* Regole sezione link esterni */
+button{
+    width: 40px;
+    height: 40px;
+    background-size: 100% 100%;
+    background-color: transparent;
+    border: none;
+    margin: 2px;
+}
+
+button:hover {
+    opacity: 40%;
+}
+
+#immagine #github #instagram #youtube #email{
+    text-decoration: none;
+}
+
+#immagine{
+    margin: 50px;
+}
+
+#github{
+    background-image: url('/img/github.webp');
+}
+
+#instagram{
+    background-image: url('/img/instagram.webp');
+}
+
+#youtube{
+    background-image: url('/img/youtube.webp');
+}
+
+#email{
+    background-image: url('/img/email.webp');
+}
+
+/* Regole responsive */
+@media (max-width: 900px){
+    section h1{
+        font-size: 40px;
+    }
+
+    section .cards{
+        flex-direction: column;
+    }
+}
