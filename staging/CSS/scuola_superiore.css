@@ -4,6 +4,13 @@ body{
     font-family: 'Century Gothic', 'Arial', 'Sans Serif';
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* align horizontal */
+    height: 100vh; /* Full height of the viewport */
+}
+
 #indietro{
     all: unset;
 
@@ -12,4 +19,12 @@ body{
 
     background-image: url("/IMG/indietro.png");
     background-size: cover;
+}
+
+h1{
+    color: white;
+}
+
+.card {
+    margin: 0 auto;
 }
