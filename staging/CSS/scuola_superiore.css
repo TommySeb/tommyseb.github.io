@@ -28,3 +28,7 @@ h1{
 .card {
     margin: 0 auto;
 }
+
+.col-sm-3.card.p-4{
+    border-radius: 20px;
+}
