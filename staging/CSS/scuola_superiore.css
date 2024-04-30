@@ -5,10 +5,11 @@ body{
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* align horizontal */
-    height: 100vh; /* Full height of the viewport */
+    position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 #indietro{
@@ -25,10 +26,29 @@ h1{
     color: white;
 }
 
-.card {
-    margin: 0 auto;
+/* Sezioni - stile comune */
+.espandi{
+    all: unset;
+    background-image: url("../IMG/espandi.webp");
+    background-size: cover;
+
+    width: 25px;
+    height: 25px;
 }
 
-.col-sm-3.card.p-4{
-    border-radius: 20px;
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Sezioni primarie */
+.contenitore-primario{
+    background-color: white;
+    padding: 10px;
+}
+
+/* Sezioni secondarie */
+.contenitore-secondario{
+    background-color: rgb(229, 229, 229);
+    padding: 10px;
 }
